@@ -41,7 +41,7 @@ jobs:
         with:
           image-ref: ${{ env.IMAGE }}:ci
           format: template
-          template: "@$HOME/.local/bin/trivy-bin/contrib/html.tpl"
+          template: "@/home/runner/.local/bin/trivy-bin/contrib/html.tpl"
           output: trivy-report.html
           exit-code: "0"
 
